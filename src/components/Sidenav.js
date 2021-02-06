@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -8,22 +8,33 @@ import {
 import './components.css';
 import coffecup from './../img/coffeecup.jpg';
 
+import About from './About';
+
 function Sidenav() {
+	const [active, setActive] = useState('about');
+
     return(
 		<>
 		<Router>
-		<div className="content-container">
+		<div className="router-container">
 			<div className="sidenav-main">
-				<Link to="/"><h2 className="sidenav-title">About</h2></Link>
-				<Link to="/projects"><h2 className="sidenav-title">Projects</h2></Link>
-				<Link to="/contact"><h2 className="sidenav-title">Contact</h2></Link>
+				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/">
+					<h2 className="sidenav-title">About</h2>
+				</Link>
+				<Link onClick={()=>{setActive('projects')}} className={active==='projects'? "sidenav-active" : "sidenav-inactive"} to="/projects">
+					<h2 className="sidenav-title">Projects</h2>
+				</Link>
+				<Link onClick={()=>{setActive('projects')}} className={active==='contact'? "sidenav-active" : "sidenav-inactive"} to="/contact">
+					<h2 className="sidenav-title">Contact</h2>
+				</Link>
 			</div>
 
 			{/* ROUTES */}
 
-			<Switch className="content-main">
-				<Route path="/">
-					<h1>about</h1>
+			<div className="content-container">
+			<Switch>
+				<Route exact path="/">
+					<About />
 				</Route>
 				<Route path="/projects">
 					<h1>projects</h1>
@@ -32,6 +43,7 @@ function Sidenav() {
 					<h1>contact</h1>
 				</Route>
 			</Switch>
+			</div>
 		</div>
 		</Router>
 		<img className="coffee-img" src={coffecup} alt="bg image sorry"/>

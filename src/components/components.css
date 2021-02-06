@@ -9,11 +9,10 @@
 	height: 5em;
 	left: 0px;
 	top: 0px;
+	z-index: 5;
 
 	background: #FFFFFF;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-	font-family: 'ABeeZee', sans-serif;
 }
 
 .header h1 {
@@ -48,27 +47,50 @@
 	color: #989898;
 }
 
-/* SIDENAV */
+/* CONTAINERS */
+.router-container {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: start;
+	top: 5em;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.content-container {
+	height: 50em;
+	width: 75%;
+	background-color: white;
+}
+
 .sidenav-main {
 	display: flex;
 	flex-direction: column;
+	padding: 3em 2em 3em 2em;
 
-	position: relative;
-	top: 5em;
-	left: 2em;
 	width: fit-content;
 
 	font-family: 'ABeeZee', sans-serif;
-	text-decoration: none;
 }
 
+/* SIDENAV SPECIFICS */
 .sidenav-title {
 	height: 1em;
 	width: fit-content;
 
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 400;
+}
+
+.sidenav-active {
 	color: white;
+}
+
+.sidenav-inactive {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .coffee-img {
@@ -76,9 +98,9 @@
 	width: 1440px;
 	height: 777px;
 	z-index: -1;
-	left: -2em;
+	left: 50%;
 	top: -1em;
-	margin: 0;
+	margin-left: -720px;
 
 	filter: blur(4px);
 }
@@ -86,6 +108,18 @@
 /* CONTENT */
 .content-main {
 	position: absolute;
-	left: 2em;
-	background-color: rgba(255, 255, 255, 0.295);
+	padding: 2em 2em 2em 4em;
+}
+
+.content-main h1 {
+	padding-left: 2em;
+	font-size: 38px;
+	font-weight: 100;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+.content-main p {
+	width: 75%;
+	font-size: 22px;
+	font-family: 'Open-Sans', sans-serif;
 }
