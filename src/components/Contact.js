@@ -7,7 +7,7 @@ function About() {
         <div className="content-main">
             <img id="portrait" src={portrait}/>
             <div id="about-text">
-                <h1>Hello, I&#39;m Devin</h1>
+                <h1>Hello, I&#39;m The Contact Page</h1>
                 <br />
                 <p>
                     Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 

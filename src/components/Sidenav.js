@@ -8,6 +8,10 @@ import {
 import './components.css';
 
 import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+
+import bg from './../img/coffeecup.jpg';
 import insta from './../img/insta-icon.svg';
 import linkedin from './../img/linkedin-icon.svg';
 import behance from './../img/behance-icon.svg';
@@ -17,6 +21,8 @@ function Sidenav() {
 
     return(
 		<>
+		<img id="background" src={bg} />
+		<div id="background-mask"/>
 		<Router>
 		<div className="router-container">
 			<div className="sidenav-main">
@@ -39,19 +45,17 @@ function Sidenav() {
 
 			{/* ROUTES */}
 
-			<div className="content-container">
 			<Switch>
 				<Route exact path="/">
 					<About />
 				</Route>
 				<Route path="/projects">
-					<About />
+					<Projects />
 				</Route>
 				<Route path="/contact">
-					<About />
+					<Contact />
 				</Route>
 			</Switch>
-			</div>
 		</div>
 		</Router>
 		</>
