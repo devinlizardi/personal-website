@@ -6,9 +6,11 @@ import {
 	Link
   } from "react-router-dom";
 import './components.css';
-import coffecup from './../img/coffeecup.jpg';
 
 import About from './About';
+import insta from './../img/insta-icon.svg';
+import linkedin from './../img/linkedin-icon.svg';
+import behance from './../img/behance-icon.svg';
 
 function Sidenav() {
 	const [active, setActive] = useState('about');
@@ -19,14 +21,20 @@ function Sidenav() {
 		<div className="router-container">
 			<div className="sidenav-main">
 				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/">
-					<h2 className="sidenav-title">About</h2>
+					<h2 className="sidenav-title">about</h2>
 				</Link>
 				<Link onClick={()=>{setActive('projects')}} className={active==='projects'? "sidenav-active" : "sidenav-inactive"} to="/projects">
-					<h2 className="sidenav-title">Projects</h2>
+					<h2 className="sidenav-title">projects</h2>
 				</Link>
-				<Link onClick={()=>{setActive('projects')}} className={active==='contact'? "sidenav-active" : "sidenav-inactive"} to="/contact">
-					<h2 className="sidenav-title">Contact</h2>
+				<Link onClick={()=>{setActive('contact')}} className={active==='contact'? "sidenav-active" : "sidenav-inactive"} to="/contact">
+					<h2 className="sidenav-title">contact</h2>
 				</Link>
+			</div>
+
+			<div id="icons">
+				<img id="insta-icon" src={insta}/>
+				<img id="linkedin-icon" src={linkedin}/>
+				<img id="behance-icon" src={behance}/>
 			</div>
 
 			{/* ROUTES */}
@@ -37,16 +45,15 @@ function Sidenav() {
 					<About />
 				</Route>
 				<Route path="/projects">
-					<h1>projects</h1>
+					<About />
 				</Route>
 				<Route path="/contact">
-					<h1>contact</h1>
+					<About />
 				</Route>
 			</Switch>
 			</div>
 		</div>
 		</Router>
-		<img className="coffee-img" src={coffecup} alt="bg image sorry"/>
 		</>
 	);
 }
