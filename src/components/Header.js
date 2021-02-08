@@ -1,14 +1,10 @@
 import React from 'react';
 import './components.css';
-import lizard from './../img/lizard.png';
 
 function Header() {
 	return(
 		<div className="header">
-			<div id="header-lizard">
-				<h1>Devin Lizardi</h1>
-				<img id="lizard-above" src={lizard}/>
-			</div>
+			<h1 id="header-lizard">Devin Lizardi</h1>
 			<p>creative, performer, covered in cat hair</p>
 		</div>
 	);

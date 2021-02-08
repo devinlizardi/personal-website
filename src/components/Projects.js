@@ -1,24 +1,28 @@
 import React from 'react';
 import './components.css';
-import portrait from'./../img/IMG_2498.JPG';
+
+import temp_image from './../img/video3.gif';
+import title_bar from './../img/osx-bar.png';
 
 function About() {
     return(
-        <div className="content-main">
-            <img id="portrait" src={portrait}/>
-            <div id="about-text">
-                <h1>Hello, I&#39;m The Projects Page</h1>
-                <br />
+        <div className="project-container-main">
+            <div id="desc-container">
+                <h2>Lizard Learning</h2>
+                <em>2019</em>
                 <p>
-                    Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 
-                    aliquam diam interdum dolor. Mauris lacus, malesuada euismod et arcu. 
-                    In consequat turpis semper sed a. Aliquet phasellus eu mauris in augue 
+                    Aliquet phasellus eu mauris in augue 
                     tortor in quam in. Vel at id faucibus eget. 
                     <br /><br />
                     Diam elementum risus et pretium 
                     interdum arcu risus. Gravida nisi, lobortis facilisis sed eu vitae. 
                     Praesent enim, in nam pretium, accumsan accumsan.
                 </p>
+            </div>
+            <div id="image-container">
+                <img id="title-bar" src={title_bar} />
+                <img id="temp-image" src={temp_image} />
+                <div id="gif-bg"/>
             </div>
         </div>
     );

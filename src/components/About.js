@@ -1,5 +1,6 @@
 import React from 'react';
 import './components.css';
+import lizard from './../img/lizard.png';
 import portrait from'./../img/IMG_2498.JPG';
 
 function About() {
@@ -8,7 +9,7 @@ function About() {
             <img id="portrait" src={portrait}/>
             <div id="about-text">
                 <h1>Hello, I&#39;m Devin</h1>
-                <br />
+                <img id="lizard-above" src={lizard}/>
                 <p>
                     Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 
                     aliquam diam interdum dolor. Mauris lacus, malesuada euismod et arcu. 
