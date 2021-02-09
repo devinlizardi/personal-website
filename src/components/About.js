@@ -6,10 +6,14 @@ import portrait from'./../img/IMG_2498.JPG';
 function About() {
     return(
         <div className="content-main">
-            <img id="portrait" src={portrait}/>
+            <img id="portrait" src={portrait} alt="Me and my cat! Finn is a 
+                3 year old very very soft brown cat who likes to
+                play hide-and-seek-cuddles"/>
             <div id="about-text">
                 <h1>Hello, I&#39;m Devin</h1>
-                <img id="lizard-above" src={lizard}/>
+                <img id="lizard-above" src={lizard} alt="my last name
+                    is just lizard-with-an-i, something i've been saying
+                    for years..."/>
                 <p>
                     Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 
                     aliquam diam interdum dolor. Mauris lacus, malesuada euismod et arcu. 

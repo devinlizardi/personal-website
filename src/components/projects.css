@@ -1,0 +1,113 @@
+/* PROJECTS PAGE*/
+
+/* GENERAL */
+.main-container {
+    position: relative;
+    background: yellow;
+}
+
+.project-container-main {
+	position: absolute;
+	left: 50%;
+	top: 160px;
+	margin-left: -35em;
+
+	height: 35em;
+	width: 70em;
+	background: #F4F4F4;
+	border-radius: 10px;
+
+	display: flex;
+}
+
+.project-container-main:hover {
+	background: #ebebeb;
+	cursor: pointer;
+}
+
+.desc-container {
+	padding: 6em 4em 2em 6em;
+}
+
+.desc-container h2 {
+	font-family: ABeeZee;
+	line-height: 0%;
+	font-size: 28px;
+	color: #000000;
+}
+
+.desc-container em {
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 0;
+	color: #8A8A8A;
+}
+
+.desc-container p {
+	font-family: Open Sans;
+	font-size: 20px;
+	width: 20em;
+}
+
+#end-padding {
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    background: red;
+}
+
+/* LIZARD LEARNING */
+
+#image-container {
+	margin-top: 4em;
+}
+
+#title-bar {
+	position: absolute;
+	top: 1.1em;
+	margin-left: -2.1em;
+
+	width: 520px;
+	height: auto;
+}
+
+#gif-bg {
+	position: absolute;
+	margin-left: -14px;
+
+	width: 478px;
+	height: 450px;
+	background-color: #C4C4C4;
+	border-radius: 0px 0px 5px 5px;
+	z-index: 0;
+}
+
+#temp-image {
+	position: absolute;
+	width: 449px;
+	height: 436px;
+	z-index: 1;
+}
+
+/* VIDEO REEL */
+
+.project-container-secondary {
+	position: absolute;
+	left: 50%;
+	top: 51em;
+	margin-left: -35em;
+
+	height: 35em;
+	width: 70em;
+	background: #F4F4F4;
+	border-radius: 10px;
+
+	display: flex;
+}
+
+.project-container-secondary .desc-container {
+    position: absolute;
+    left: 33em;
+}

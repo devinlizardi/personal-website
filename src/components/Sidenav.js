@@ -38,9 +38,15 @@ function Sidenav() {
 				</div>
 
 				<div id="icons">
-					<img id="insta-icon" src={insta}/>
-					<img id="linkedin-icon" src={linkedin}/>
-					<img id="vimeo-icon" src={vimeo}/>
+					<a href="https://www.instagram.com/devin_lizard/">
+						<img id="insta-icon" className="icon" src={insta}/>
+					</a>
+					<a href="https://www.linkedin.com/in/devin-lizardi-65b850132/">
+						<img id="linkedin-icon" className="icon" src={linkedin}/>
+					</a>
+					<a href="https://vimeo.com/devinlizardi">
+						<img id="vimeo-icon" className="icon" src={vimeo}/>
+					</a>
 				</div>
 
 				{/* ROUTES */}
