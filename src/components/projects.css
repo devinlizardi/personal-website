@@ -51,16 +51,9 @@
 	width: 20em;
 }
 
-#end-padding {
-    position: absolute;
-    width: 100%;
-    height: 10em;
-    background: red;
-}
-
 /* LIZARD LEARNING */
 
-#image-container {
+.image-container {
 	margin-top: 4em;
 }
 
@@ -110,4 +103,12 @@
 .project-container-secondary .desc-container {
     position: absolute;
     left: 33em;
+}
+
+#reel-text {
+	margin-left: 4.5em;
+}
+
+#vimeo-iframe {
+	margin-left: 2em;
 }
