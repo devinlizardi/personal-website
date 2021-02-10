@@ -86,7 +86,7 @@
 
 /* VIDEO REEL */
 
-.project-container-secondary {
+.project-container-tertiary {
 	position: absolute;
 	left: 50%;
 	top: 51em;
@@ -100,7 +100,7 @@
 	display: flex;
 }
 
-.project-container-secondary .desc-container {
+.project-container-tertiary .desc-container {
     position: absolute;
     left: 33em;
 }
