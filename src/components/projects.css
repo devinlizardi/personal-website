@@ -3,7 +3,8 @@
 /* GENERAL */
 .main-container {
     position: relative;
-    background: yellow;
+	width: 100%;
+	height: 130em;
 }
 
 .project-container-main {
@@ -51,6 +52,11 @@
 	width: 20em;
 }
 
+.changer:hover {
+	background: #ebebeb;
+	cursor: pointer;
+}
+
 /* LIZARD LEARNING */
 
 .image-container {
@@ -84,9 +90,8 @@
 	z-index: 1;
 }
 
-/* VIDEO REEL */
-
-.project-container-tertiary {
+/* ILUSTRATION */
+.project-container-secondary {
 	position: absolute;
 	left: 50%;
 	top: 51em;
@@ -100,15 +105,30 @@
 	display: flex;
 }
 
+/* VIDEO REEL */
+.project-container-tertiary {
+	position: absolute;
+	left: 50%;
+	top: 92em;
+	margin-left: -35em;
+
+	height: 31em;
+	width: 70em;
+	background: #F4F4F4;
+	border-radius: 10px;
+
+	display: flex;
+}
+
 .project-container-tertiary .desc-container {
-    position: absolute;
-    left: 33em;
+	margin-left: -1.5em;
+	margin-top: -2.2em;
 }
 
 #reel-text {
-	margin-left: 4.5em;
+	width: 15em;
 }
 
 #vimeo-iframe {
-	margin-left: 2em;
+	margin-left: -2em;
 }
