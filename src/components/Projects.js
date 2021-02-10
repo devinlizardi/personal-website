@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './components.css';
 import './projects.css';
 
@@ -6,9 +6,18 @@ import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
 
 function About() {
+    const [update, setUpdate] = useState(true);
+
+    function expand(e) {
+        console.log(e.target.style.maxHeight)
+        setUpdate(!update);
+        e.target.style.maxHeight = "70em";
+        console.log(e.target.style.maxHeight)
+    }
+
     return(
         <div className="main-container">
-            <div className="project-container-main">
+            <div className="project-container-main changer" onClick={expand}>
                 <div className="desc-container">
                     <h2>Lizard Learning</h2>
                     <em>2019-Present</em>

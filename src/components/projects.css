@@ -8,22 +8,18 @@
 }
 
 .project-container-main {
-	position: absolute;
+	position: relative;
 	left: 50%;
 	top: 160px;
 	margin-left: -35em;
 
-	height: 35em;
+	height: 80em;
+	max-height: 35em;
 	width: 70em;
 	background: #F4F4F4;
 	border-radius: 10px;
 
 	display: flex;
-}
-
-.project-container-main:hover {
-	background: #ebebeb;
-	cursor: pointer;
 }
 
 .desc-container {
@@ -92,9 +88,9 @@
 
 /* ILUSTRATION */
 .project-container-secondary {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 51em;
+	margin-top: 10em;
 	margin-left: -35em;
 
 	height: 35em;
@@ -107,9 +103,9 @@
 
 /* VIDEO REEL */
 .project-container-tertiary {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 92em;
+	margin-top: 10em;
 	margin-left: -35em;
 
 	height: 31em;
