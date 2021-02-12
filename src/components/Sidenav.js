@@ -36,7 +36,6 @@ function Sidenav() {
 						<h2 className="sidenav-title">contact</h2>
 					</Link>
 				</div>
-
 				<div id="icons">
 					<a href="https://www.instagram.com/devin_lizard/">
 						<img id="insta-icon" className="icon" src={insta}/>
@@ -48,9 +47,10 @@ function Sidenav() {
 						<img id="vimeo-icon" className="icon" src={vimeo}/>
 					</a>
 				</div>
+			</div>
 
-				{/* ROUTES */}
-
+			{/* ROUTES */}
+			<div id="main-container">
 				<Switch>
 					<Route exact path="/">
 						<About />

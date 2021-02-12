@@ -23,6 +23,8 @@ function About() {
                     Diam elementum risus et pretium 
                     interdum arcu risus. Gravida nisi, lobortis facilisis sed eu vitae. 
                     Praesent enim, in nam pretium, accumsan accumsan.
+                    <br /><br />
+                    This website was developed by me! View the source code <a> at this repository</a>
                 </p>
             </div>
         </div>

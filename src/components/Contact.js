@@ -1,13 +1,11 @@
 import React from 'react';
 import './components.css';
-import portrait from'./../img/IMG_2498.JPG';
 
 function About() {
     return(
-        <div className="content-main">
-            <img id="portrait" src={portrait}/>
+        <div className="content-main" id="contact">
             <div id="about-text">
-                <h1>Hello, I&#39;m The Contact Page</h1>
+                <h1>Contact Me</h1>
                 <br />
                 <p>
                     Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 
@@ -15,9 +13,8 @@ function About() {
                     In consequat turpis semper sed a. Aliquet phasellus eu mauris in augue 
                     tortor in quam in. Vel at id faucibus eget. 
                     <br /><br />
-                    Diam elementum risus et pretium 
-                    interdum arcu risus. Gravida nisi, lobortis facilisis sed eu vitae. 
-                    Praesent enim, in nam pretium, accumsan accumsan.
+                    Email: <a>itsdevin@gmail.com</a> <br />
+                    <a>Download my resume</a>
                 </p>
             </div>
         </div>
