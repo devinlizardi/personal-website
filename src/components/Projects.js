@@ -50,28 +50,28 @@ function About() {
                     and learn from all the other resources out there on their own.
                 </div>
             </div>
-            <div className="project-container-secondary changer" onClick={expand}>
-                <div className="desc-container">
-                        <h2>Illustration Progress</h2>
-                        <em>2019-Present</em>
-                        <p>
-                            Aliquet phasellus eu mauris in augue 
-                            tortor in quam in. Vel at id faucibus eget. 
-                            <br /><br />
-                            Gravida nisi, lobortis facilisis sed eu vitae. 
-                            Praesent enim, in nam pretium, accumsan accumsan.
-                        </p>
-                    </div>
-                    <div className="image-container">
-                        
-                    </div>
+            <div className="project-container-secondary changer">
+                <div id="illustration-desc">
+                    <h2>Illustration Progress</h2>
+                    <em>2019-Present</em>
+                    <p>
+                        Aliquet phasellus eu mauris in augue 
+                        tortor in quam in. Vel at id faucibus eget. 
+                        Gravida nisi, lobortis facilisis sed eu vitae. 
+                        Praesent enim, in nam pretium, accumsan accumsan.
+                    </p>
+                </div>
+                <div id="work-container">
+                    <img id="work-title-bar" src={title_bar} alt="more fun images!"/>
+                    <div id="work-bg"/>
+                </div>
             </div>
             <div className="project-container-tertiary changer">
                 <div className="desc-container">
                     <h2>Video Reel</h2>
-                    <em>2018-2019</em>
+                    <em>2016-2020</em>
                     <p id="reel-text">
-                        I&#39;m also a passionate editor and actor, and have been involved in a number
+                        I&#39;m also a passionate video editor and actor, and have been involved in a number
                         of student films through my <a href="https://www.facebook.com/jericho.comedy">improv team</a>,
                          <a href="https://www.giantfilmmakersucb.org/"> GiANT Filmmakers</a>, 
                          and <a href="http://caldka.org/">Cal DKA</a>.

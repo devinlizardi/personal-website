@@ -119,12 +119,57 @@
 	width: 70em;
 	background: #F4F4F4;
 	border-radius: 10px;
-	display: flex;
 
-	height: 80em;
-	max-height: 35em;
+	height: 55em;
 	transition: max-height 200ms ease;
 	overflow: hidden;
+}
+
+#illustration-desc {
+	padding: 3em 4em 2em 4.3em;
+	pointer-events: none;
+	font-family: Open Sans;
+	font-size: 20px;
+	width: 50em;
+}
+
+#illustration-desc em {
+	position: relative;
+	top: -1.2em;
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 0;
+	color: #8A8A8A;
+}
+
+#illustration-desc p {
+	position: relative;
+	top: -1em;
+}
+
+#work-container {
+	position: relative;
+	top: -6em;
+	left: 50%;
+	margin-left: -30em;
+}
+
+#work-title-bar {
+	filter: invert(.2);
+	width: 60em;
+	height: auto;
+}
+
+#work-bg {
+	position: relative;
+	background-color: #d4d4d4;
+	top: -70px;
+	left: 50%;
+	margin-left: -764px;
+	width: 883px;
+	height: 30em;
 }
 
 /* VIDEO REEL */
