@@ -5,12 +5,13 @@ import './projects.css';
 import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
 
+import FishDrag from './FishDrag.js';
+
 function About() {
     const [update, setUpdate] = useState(true);
 
     function expand(e) {
         let isSmall = e.target.style.maxHeight != "63em";
-        console.log(isSmall);
 
         e.target.style.maxHeight = isSmall ? "63em" : "38em";
         setUpdate(!update);
@@ -50,7 +51,7 @@ function About() {
                     and learn from all the other resources out there on their own.
                 </div>
             </div>
-            <div className="project-container-secondary changer">
+            <div className="project-container-secondary">
                 <div id="illustration-desc">
                     <h2>Illustration Progress</h2>
                     <em>2019-Present</em>
@@ -61,10 +62,11 @@ function About() {
                         Praesent enim, in nam pretium, accumsan accumsan.
                     </p>
                 </div>
-                <div id="work-container">
+                <FishDrag/>
+                {/* <div id="work-container">
                     <img id="work-title-bar" src={title_bar} alt="more fun images!"/>
                     <div id="work-bg"/>
-                </div>
+                </div> */}
             </div>
             <div className="project-container-tertiary changer">
                 <div className="desc-container">
@@ -83,7 +85,7 @@ function About() {
                         allowFullScreen></iframe>
                 </div>
             </div>
-            </> );
+        </> );
 }
 
 export default About;
