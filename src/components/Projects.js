@@ -4,8 +4,9 @@ import './projects.css';
 
 import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
+import fishPA from './../img/fishpa.jpg';
 
-import FishDrag from './FishDrag.js';
+import DragContainer from './DragContainer.js';
 
 function About() {
     const [update, setUpdate] = useState(true);
@@ -62,7 +63,7 @@ function About() {
                         Praesent enim, in nam pretium, accumsan accumsan.
                     </p>
                 </div>
-                <FishDrag/>
+                <DragContainer piece={fishPA} width={533} height={407}/>
                 {/* <div id="work-container">
                     <img id="work-title-bar" src={title_bar} alt="more fun images!"/>
                     <div id="work-bg"/>

@@ -188,6 +188,8 @@
 }
 
 .content-main h1 {
+	position: absolute;
+	top: -20px;
 	font-size: 38px;
 	font-weight: 100;
 	line-height: 0;
@@ -203,7 +205,7 @@
 #lizard-above {
 	position: absolute;
 	left: 38em;
-	top: 0em;
+	top: -2em;
 	width: 63.48px;
 	height: 68.54px;
 	transform: rotate(-20.91deg);
