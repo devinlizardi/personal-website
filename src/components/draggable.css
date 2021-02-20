@@ -1,5 +1,6 @@
 .drag-container-main {
     position: absolute;
+    left: 4em;
     width: 40em;
     height: auto;
 }
