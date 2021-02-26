@@ -5,6 +5,10 @@
     height: auto;
 }
 
+.drag-container-main:focus {
+    z-index: 3;
+}
+
 .piece-content {
     position: absolute;
     pointer-events: none;
@@ -17,4 +21,9 @@
     left: -30px;
     z-index: 1;
     opacity: 0.9;
+}
+
+#hand {
+    top: 18em;
+    left: 38em;
 }

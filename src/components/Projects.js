@@ -5,8 +5,11 @@ import './projects.css';
 import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
 import fishPA from './../img/fishpa.jpg';
+import handIll from './../img/handillustration.jpg';
+import sleep from './../img/needsleep.jpg';
 
 import DragContainer from './DragContainer.js';
+import DragContainerTall from './DragContainerTall';
 
 function About() {
     const [update, setUpdate] = useState(true);
@@ -63,11 +66,9 @@ function About() {
                         Praesent enim, in nam pretium, accumsan accumsan.
                     </p>
                 </div>
-                <DragContainer piece={fishPA} width={533} height={407}/>
-                {/* <div id="work-container">
-                    <img id="work-title-bar" src={title_bar} alt="more fun images!"/>
-                    <div id="work-bg"/>
-                </div> */}
+                <DragContainer piece={fishPA} width={533} bgW={533} height={380} rate={60}/>
+                <DragContainerTall piece={sleep} imageWidth={270} contWidth={260} contHeight={422}/>
+                <DragContainer piece={handIll} width={350*.7} bgW={369 * .7} height={329.6*.7} rate={100} idd="hand"/>
             </div>
             <div className="project-container-tertiary changer">
                 <div className="desc-container">

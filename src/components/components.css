@@ -210,11 +210,13 @@
 	top: -2em;
 	width: 63.48px;
 	height: 68.54px;
-	transform: rotate(-20.91deg);
+	transform: rotate(-20deg);
+	transition: transform 9999s 9999s;
 }
 
-#lizard-above:active {
-	animation: spin 1s infinite ;
+#lizard-above:hover {
+	transform: rotate(1440deg);
+	transition: transform 6s ease;
 }
 
 #portrait {
@@ -244,14 +246,4 @@
 #about-text a:hover {
 	text-decoration: underline;
 	cursor: pointer;
-}
-
-/* ANIMATIONS */
-@keyframes spin {
-	from {
-		transform: rotate(-20.91deg);
-	}
-	to {
-		transform: rotate(339.09deg);
-	}
 }

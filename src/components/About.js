@@ -11,7 +11,8 @@ function About() {
                 play hide-and-seek-cuddles"/>
             <div id="about-text">
                 <h1>Hello, I&#39;m Devin</h1>
-                <img id="lizard-above" src={lizard} alt="my last name
+                <img id="lizard-above" 
+                    src={lizard} alt="my last name
                     is just lizard-with-an-i, something i've been saying
                     for years..."/>
                 <p>
