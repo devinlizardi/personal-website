@@ -8,8 +8,8 @@ import title_bar from './../img/osx-bar.png';
 import fishPA from './../img/fishpa.jpg';
 import handIll from './../img/handillustration.jpg';
 import sleep from './../img/needsleep.jpg';
-// import aliens from './../img/aliens.jpg';
-// import couch from './../img/couch text.jpg';
+import aliens from './../img/aliens.jpg';
+import couch from './../img/couch.jpg';
 
 import DragContainerTall from './DragContainerTall';
 
@@ -92,18 +92,25 @@ function About() {
 
 function Pieces() {
     const [maxHeight, setMaxHeight] = useState(6);
-    const [orderObj, setOrderObj] = useState({fish: 3, sleep: 4, hand: 5})
+    const [orderObj, setOrderObj] = useState({fish: 5, sleep: 4, hand: 3, aliens: 4, couch:5})
 
     const focus = (n) => {
+        //TODO: Please please please find a better way
         switch(n) {
             case 'fish': 
-                setOrderObj({fish: maxHeight, sleep: orderObj.sleep, hand: orderObj.hand});
+                setOrderObj({fish: maxHeight, sleep: orderObj.sleep, hand: orderObj.hand, aliens: orderObj.aliens, couch: orderObj.couch});
                 break;
             case 'sleep':
-                setOrderObj({sleep: maxHeight, fish: orderObj.fish, hand: orderObj.hand});
+                setOrderObj({fish: orderObj.fish, sleep: maxHeight, hand: orderObj.hand, aliens: orderObj.aliens, couch: orderObj.couch});
                 break;
             case 'hand':
-                setOrderObj({hand: maxHeight, fish: orderObj.fish, sleep: orderObj.sleep});
+                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: maxHeight, aliens: orderObj.aliens, couch: orderObj.couch});
+                break;
+            case 'aliens':
+                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: orderObj.hand, aliens: maxHeight, couch: orderObj.couch});
+                break;
+            case 'couch':
+                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: orderObj.hand, aliens: orderObj.aliens, couch: maxHeight});
                 break;
             default:
                 break;
@@ -113,16 +120,20 @@ function Pieces() {
 
     return ( <>
                 <div onMouseDown={() => {focus('fish')}}>
-                <DragContainerTall piece={fishPA} width={400} idd="fishPA" z={orderObj.fish}/>
+                <DragContainerTall piece={fishPA} width={450} idd="fishPA" z={orderObj.fish}/>
                 </div>
                 <div onMouseDown={() => {focus('sleep')}}>
-                <DragContainerTall piece={sleep} width={300} idd="" z={orderObj.sleep}/>
+                <DragContainerTall piece={sleep} width={300} idd="sleep" z={orderObj.sleep}/>
                 </div>
                 <div onMouseDown={() => {focus('hand')}}>
-                <DragContainerTall piece={handIll} width={400} idd="hand" z={orderObj.hand}/>
+                <DragContainerTall piece={handIll} width={350} idd="hand" z={orderObj.hand}/>
                 </div>
-                {/* <DragContainerTall piece={aliens} width={350} idd=""/>
-                <DragContainerTall piece={couch} width={550} idd=""/> */}
+                <div onMouseDown={() => {focus('aliens')}}>
+                <DragContainerTall piece={aliens} width={330} idd="aliens" z={orderObj.aliens}/>
+                </div>
+                <div onMouseDown={() => {focus('couch')}}>
+                <DragContainerTall piece={couch} width={300} idd="couch" z={orderObj.couch}/>
+                </div>
             </>);
 }
 

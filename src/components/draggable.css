@@ -6,8 +6,8 @@
     position: absolute;
     pointer-events: none;
     z-index: 2;
-    left: 20px;
-    top: 20px;
+    left:15px;
+    top: 25px;
 }
 
 .piece-bg {
@@ -17,11 +17,26 @@
 }
 
 #fishPA {
-    top: 0;
-    left: 8em;
+    top: -3em;
+    left: 3em;
 }
 
 #hand {
-    top: 18em;
+    top: -2em;
+    left: 41em;
+}
+
+#sleep {
+    top: 0;
+    left: 25em;
+}
+
+#aliens {
+    top: 19em;
     left: 38em;
+}
+
+#couch {
+    top: 18em;
+    left: 7em;
 }

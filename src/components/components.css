@@ -9,7 +9,7 @@
 	height: 7em;
 	left: 0px;
 	top: 0px;
-	z-index: 5;
+	z-index: 999998;
 
 	background: #FFFFFF;
 	box-shadow: 0px 5px 10px 2px #00000048;
@@ -96,7 +96,7 @@
 .sidenav-main {
 	position: fixed;
 	display: flex;
-	z-index: 5;
+	z-index: 999999;
 	left: 80vw;
 	margin-top: -7em;
 }
