@@ -4,11 +4,13 @@ import './projects.css';
 
 import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
+
 import fishPA from './../img/fishpa.jpg';
 import handIll from './../img/handillustration.jpg';
 import sleep from './../img/needsleep.jpg';
+// import aliens from './../img/aliens.jpg';
+// import couch from './../img/couch text.jpg';
 
-import DragContainer from './DragContainer.js';
 import DragContainerTall from './DragContainerTall';
 
 function About() {
@@ -66,9 +68,7 @@ function About() {
                         Praesent enim, in nam pretium, accumsan accumsan.
                     </p>
                 </div>
-                <DragContainer piece={fishPA} width={533} bgW={533} height={380} rate={60}/>
-                <DragContainerTall piece={sleep} imageWidth={270} contWidth={260} contHeight={422}/>
-                <DragContainer piece={handIll} width={350*.7} bgW={369 * .7} height={329.6*.7} rate={100} idd="hand"/>
+                <Pieces />
             </div>
             <div className="project-container-tertiary changer">
                 <div className="desc-container">
@@ -88,6 +88,42 @@ function About() {
                 </div>
             </div>
         </> );
+}
+
+function Pieces() {
+    const [maxHeight, setMaxHeight] = useState(6);
+    const [orderObj, setOrderObj] = useState({fish: 3, sleep: 4, hand: 5})
+
+    const focus = (n) => {
+        switch(n) {
+            case 'fish': 
+                setOrderObj({fish: maxHeight, sleep: orderObj.sleep, hand: orderObj.hand});
+                break;
+            case 'sleep':
+                setOrderObj({sleep: maxHeight, fish: orderObj.fish, hand: orderObj.hand});
+                break;
+            case 'hand':
+                setOrderObj({hand: maxHeight, fish: orderObj.fish, sleep: orderObj.sleep});
+                break;
+            default:
+                break;
+        }
+        setMaxHeight(maxHeight + 1);
+    }
+
+    return ( <>
+                <div onMouseDown={() => {focus('fish')}}>
+                <DragContainerTall piece={fishPA} width={400} idd="fishPA" z={orderObj.fish}/>
+                </div>
+                <div onMouseDown={() => {focus('sleep')}}>
+                <DragContainerTall piece={sleep} width={300} idd="" z={orderObj.sleep}/>
+                </div>
+                <div onMouseDown={() => {focus('hand')}}>
+                <DragContainerTall piece={handIll} width={400} idd="hand" z={orderObj.hand}/>
+                </div>
+                {/* <DragContainerTall piece={aliens} width={350} idd=""/>
+                <DragContainerTall piece={couch} width={550} idd=""/> */}
+            </>);
 }
 
 export default About;

@@ -1,26 +1,24 @@
 .drag-container-main {
-    position: absolute;
-    left: 4em;
-    width: 40em;
-    height: auto;
-}
-
-.drag-container-main:focus {
-    z-index: 3;
+    position: relative;
 }
 
 .piece-content {
     position: absolute;
     pointer-events: none;
     z-index: 2;
+    left: 20px;
+    top: 20px;
 }
 
 .piece-bg {
     position: absolute;
-    top: -102px;
-    left: -30px;
     z-index: 1;
     opacity: 0.9;
+}
+
+#fishPA {
+    top: 0;
+    left: 8em;
 }
 
 #hand {
