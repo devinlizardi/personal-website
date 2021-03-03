@@ -10,6 +10,7 @@ import handIll from './../img/handillustration.jpg';
 import sleep from './../img/needsleep.jpg';
 import aliens from './../img/aliens.jpg';
 import couch from './../img/couch.jpg';
+import places from './../img/ohtheplaces.jpg';
 
 import DragContainerTall from './DragContainerTall';
 
@@ -70,7 +71,7 @@ function About() {
                 </div>
                 <Pieces />
             </div>
-            <div className="project-container-tertiary changer">
+            <div className="project-container-tertiary">
                 <div className="desc-container">
                     <h2>Video Reel</h2>
                     <em>2016-2020</em>
@@ -91,30 +92,17 @@ function About() {
 }
 
 function Pieces() {
-    const [maxHeight, setMaxHeight] = useState(6);
-    const [orderObj, setOrderObj] = useState({fish: 5, sleep: 4, hand: 3, aliens: 4, couch:5})
+    const [maxHeight, setMaxHeight] = useState(7);
+    const [orderObj, setOrderObj] = useState({fish: 5, sleep: 4, hand: 3, aliens: 5, couch: 6, places: 4});
+
+    const buildOrder = (n) => {
+        var temp = {fish: orderObj.fish, sleep: orderObj.sleep, hand: orderObj.hand, aliens: orderObj.aliens, couch: orderObj.couch, places: orderObj.places};
+        temp[n] = maxHeight;
+        return temp;
+    }
 
     const focus = (n) => {
-        //TODO: Please please please find a better way
-        switch(n) {
-            case 'fish': 
-                setOrderObj({fish: maxHeight, sleep: orderObj.sleep, hand: orderObj.hand, aliens: orderObj.aliens, couch: orderObj.couch});
-                break;
-            case 'sleep':
-                setOrderObj({fish: orderObj.fish, sleep: maxHeight, hand: orderObj.hand, aliens: orderObj.aliens, couch: orderObj.couch});
-                break;
-            case 'hand':
-                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: maxHeight, aliens: orderObj.aliens, couch: orderObj.couch});
-                break;
-            case 'aliens':
-                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: orderObj.hand, aliens: maxHeight, couch: orderObj.couch});
-                break;
-            case 'couch':
-                setOrderObj({fish: orderObj.fish, sleep: orderObj.sleep, hand: orderObj.hand, aliens: orderObj.aliens, couch: maxHeight});
-                break;
-            default:
-                break;
-        }
+        setOrderObj(buildOrder(n))
         setMaxHeight(maxHeight + 1);
     }
 
@@ -133,6 +121,9 @@ function Pieces() {
                 </div>
                 <div onMouseDown={() => {focus('couch')}}>
                 <DragContainerTall piece={couch} width={300} idd="couch" z={orderObj.couch}/>
+                </div>
+                <div onMouseDown={() => {focus('places')}}>
+                <DragContainerTall piece={places} width={280} idd="places" z={orderObj.places}/>
                 </div>
             </>);
 }

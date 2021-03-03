@@ -7,7 +7,7 @@
     pointer-events: none;
     z-index: 2;
     left:15px;
-    top: 25px;
+    top: 28px;
 }
 
 .piece-bg {
@@ -33,10 +33,15 @@
 
 #aliens {
     top: 19em;
-    left: 38em;
+    left: 10em;
 }
 
 #couch {
-    top: 18em;
-    left: 7em;
+    top: 27em;
+    left: 22em;
+}
+
+#places {
+    top: 17em;
+    left: 38em;
 }
