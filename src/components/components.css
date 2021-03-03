@@ -27,7 +27,7 @@
 }
 
 .header:hover {
-	cursor: default;
+	cursor: pointer;
 }
 
 .header h1 {

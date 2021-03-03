@@ -10,20 +10,23 @@ import './components/components.css';
 import About from './components/About';
 import Projects from './components/Projects';
 import Header from './components/Header';
+import Homepage from './components/Homepage';
 
 import bg from './img/coffeecup.jpg';
 
 function App() {
-	const [active, setActive] = useState('about');
+	const [active, setActive] = useState('');
 
 	return(
 		<>
 		<Router>
-			<Header />
+			<Link to="/" onClick={()=>{setActive('')}}>
+				<Header />
+			</Link>
 			<img id="background" src={bg}/>
 			<div id="background-mask"/>
 			<div className="sidenav-main">
-				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/">
+				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/about">
 					<h2 className="sidenav-title">about</h2>
 				</Link>
 				<Link onClick={()=>{setActive('projects')}} className={active==='projects'? "sidenav-active" : "sidenav-inactive"} to="/projects">
@@ -34,6 +37,9 @@ function App() {
 			<div id="main-container">
 				<Switch>
 					<Route exact path="/">
+						<Homepage />
+					</Route>
+					<Route path="/about">
 						<About />
 					</Route>
 					<Route path="/projects">

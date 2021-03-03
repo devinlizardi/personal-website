@@ -12,7 +12,7 @@ import aliens from './../img/aliens.jpg';
 import couch from './../img/couch.jpg';
 import places from './../img/ohtheplaces.jpg';
 
-import DragContainerTall from './DragContainerTall';
+import DragContainer from './DragContainer';
 
 function About() {
     const [update, setUpdate] = useState(true);
@@ -108,22 +108,22 @@ function Pieces() {
 
     return ( <>
                 <div onMouseDown={() => {focus('fish')}}>
-                <DragContainerTall piece={fishPA} width={450} idd="fishPA" z={orderObj.fish}/>
+                <DragContainer piece={fishPA} width={450} idd="fishPA" z={orderObj.fish}/>
                 </div>
                 <div onMouseDown={() => {focus('sleep')}}>
-                <DragContainerTall piece={sleep} width={300} idd="sleep" z={orderObj.sleep}/>
+                <DragContainer piece={sleep} width={300} idd="sleep" z={orderObj.sleep}/>
                 </div>
                 <div onMouseDown={() => {focus('hand')}}>
-                <DragContainerTall piece={handIll} width={350} idd="hand" z={orderObj.hand}/>
+                <DragContainer piece={handIll} width={350} idd="hand" z={orderObj.hand}/>
                 </div>
                 <div onMouseDown={() => {focus('aliens')}}>
-                <DragContainerTall piece={aliens} width={330} idd="aliens" z={orderObj.aliens}/>
+                <DragContainer piece={aliens} width={330} idd="aliens" z={orderObj.aliens}/>
                 </div>
                 <div onMouseDown={() => {focus('couch')}}>
-                <DragContainerTall piece={couch} width={300} idd="couch" z={orderObj.couch}/>
+                <DragContainer piece={couch} width={300} idd="couch" z={orderObj.couch}/>
                 </div>
                 <div onMouseDown={() => {focus('places')}}>
-                <DragContainerTall piece={places} width={280} idd="places" z={orderObj.places}/>
+                <DragContainer piece={places} width={280} idd="places" z={orderObj.places}/>
                 </div>
             </>);
 }
