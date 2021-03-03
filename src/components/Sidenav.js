@@ -9,7 +9,7 @@ import './components.css';
 
 import About from './About';
 import Projects from './Projects';
-import Contact from './Contact';
+import Header from './Header';
 
 import bg from './../img/coffeecup.jpg';
 
@@ -18,9 +18,10 @@ function Sidenav() {
 
     return(
 		<>
-		<img id="background" src={bg}/>
-		<div id="background-mask"/>
 		<Router>
+			<Header />
+			<img id="background" src={bg}/>
+			<div id="background-mask"/>
 			<div className="sidenav-main">
 				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/">
 					<h2 className="sidenav-title">about</h2>
@@ -28,9 +29,6 @@ function Sidenav() {
 				<Link onClick={()=>{setActive('projects')}} className={active==='projects'? "sidenav-active" : "sidenav-inactive"} to="/projects">
 					<h2 className="sidenav-title">projects</h2>
 				</Link>
-				{/* <Link onClick={()=>{setActive('contact')}} className={active==='contact'? "sidenav-active" : "sidenav-inactive"} to="/contact">
-					<h2 className="sidenav-title">contact</h2>
-				</Link> */}
 			</div>
 			{/* ROUTES */}
 			<div id="main-container">
@@ -40,9 +38,6 @@ function Sidenav() {
 					</Route>
 					<Route path="/projects">
 						<Projects />
-					</Route>
-					<Route path="/contact">
-						<Contact />
 					</Route>
 				</Switch>
 			</div>
