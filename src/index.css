@@ -7,6 +7,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1::selection {
+  background: #22478E;
+  color: white;
+}
+
+h2::selection {
+  background: #22478E;
+  color: white;
+}
+
+p::selection {
+  background: #22478E;
+  color: white;
+}
+
+em::selection {
+  background: #22478E;
+  color: white;
+}
+
+a::selection {
+  background: #22478E;
+  color: rgb(255, 253, 123);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

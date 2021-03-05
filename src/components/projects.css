@@ -198,6 +198,10 @@
 	width: 15em;
 }
 
+.project-container-tertiary .desc-container:hover {
+	pointer-events: auto;
+}
+
 #vimeo-iframe {
 	margin-left: -2em;
 }
