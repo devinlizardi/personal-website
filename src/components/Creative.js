@@ -84,7 +84,7 @@ function Pieces() {
                 <DragContainer piece={couch} width={300} idd="couch" z={orderObj.couch}/>
                 </div>
                 <div onMouseDown={() => {focus('places')}}>
-                <DragContainer piece={places} width={280} idd="places" z={orderObj.places}/>
+                <DragContainer piece={places} width={320} idd="places" z={orderObj.places}/>
                 </div>
             </>);
 }
