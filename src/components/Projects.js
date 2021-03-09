@@ -11,7 +11,6 @@ import sleep from './../img/needsleep.jpg';
 import aliens from './../img/aliens.jpg';
 import couch from './../img/couch.jpg';
 import places from './../img/ohtheplaces.jpg';
-
 import DragContainer from './DragContainer';
 
 function About() {

@@ -10,7 +10,7 @@ function Header() {
 						is just lizard-with-an-i, something i've been saying
 						for years..."/>
 			<h1 id="header-lizard">Devin Lizardi</h1>
-			<p>creative, educator, covered in cat hair</p>
+			<p>educator, creative, covered in cat hair</p>
 		</div>
 	);
 }
