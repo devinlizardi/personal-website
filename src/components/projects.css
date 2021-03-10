@@ -12,7 +12,7 @@
 	display: flex;
 
 	height: 80em;
-	max-height: 38em;
+	max-height: 37em;
 	transition: max-height 200ms ease;
 	overflow: hidden;
 }
@@ -43,6 +43,7 @@
 	font-size: 20px;
 	width: 20em;
 	pointer-events: auto;
+	cursor: default;
 }
 
 .desc-container a {
@@ -63,17 +64,19 @@
 	font-size: 20px;
 
 	pointer-events: none;
+	cursor: default;
 	position: absolute;
 	padding: 0 4em 0 4.8em;
 	top: 30.5em;
 }
 
-.overflow-text a {
-	pointer-events: auto;
-}
-
 .overflow-text a:hover {
 	text-decoration-color: blue;
+}
+
+.overflow-text::selection {
+	background: #22478E;
+	color: white;
 }
 
 /* LIZARD LEARNING */
@@ -139,7 +142,7 @@
 .project-container-secondary {
 	position: relative;
 	left: 50%;
-	top: 0;
+	top: -1em;
 	margin-top: 6em;
 	margin-left: -35em;
 	width: 70em;

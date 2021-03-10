@@ -14,9 +14,10 @@ function Creative() {
         <div className="intro-text">
             <h2>An Artist</h2>
             <p>
-            Nunc sollicitudin commodo lorem finibus scelerisque. Proin vitae massa aliquet, 
-            iaculis ex eu, vulputate nibh. Cras quis lacus suscipit, sodales lectus a, viverra velit.
-            Quisque auctor in ante non faucibus. Ut pharetra enim purus, a pellentesque tellus feugiat non. 
+                Art is my exploration of my varying interests - whether it&#39;s acting & improv, 
+                illustration, music, computer programming, etc. My fine art is mostly self-taught, the focus
+                of my work being to express with honesty, in whatever the best form I feel is suited for and 
+                reflects the work itself.
             </p>
         </div>
         <div className="project-container-secondary">
@@ -24,10 +25,8 @@ function Creative() {
                 <h2>Illustration Progress</h2>
                 <em>2019-Present</em>
                 <p>
-                    Aliquet phasellus eu mauris in augue 
-                    tortor in quam in. Vel at id faucibus eget. 
-                    Gravida nisi, lobortis facilisis sed eu vitae. 
-                    Praesent enim, in nam pretium, accumsan accumsan.
+                    Over the past year I&#39;ve been teaching myself to draw, here are a few examples
+                    meant to illustrate that progress. <b>Feel free to click and drag around the images.</b>
                 </p>
             </div>
             <Pieces />

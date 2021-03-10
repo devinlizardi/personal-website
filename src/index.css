@@ -22,6 +22,11 @@ p::selection {
   color: white;
 }
 
+b::selection {
+  background: #22478E;
+  color: white;
+}
+
 em::selection {
   background: #22478E;
   color: white;

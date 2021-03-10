@@ -26,16 +26,19 @@ function About() {
             <div id="about-text">
                 <h1>Hello, I&#39;m Devin</h1>
                 <p>
-                    Dui aliquet vestibulum sit augue fringilla. Ultricies ante non tortor 
-                    aliquam diam interdum dolor. Mauris lacus, malesuada euismod et arcu. 
-                    In consequat turpis semper sed a. Aliquet phasellus eu mauris in augue 
-                    tortor in quam in. Vel at id faucibus eget. 
+                    Recently graduated from UC Berkeley with a BA in Cognitive Science, I&#39;m trained
+                    as an artist and work as an educator. Improv theater defines my approach to teaching coding,
+                    and I have found no greater inspiration than in the truly post-modernm art of a cohort of 12 year olds 
+                    who really just want to play Minecraft. Good thing I can speak Minecraft as well.
                     <br /><br />
-                    Diam elementum risus et pretium 
-                    interdum arcu risus. Gravida nisi, lobortis facilisis sed eu vitae. 
-                    Praesent enim, in nam pretium, accumsan accumsan.
+                    I am also pursuing work in theater and television production and performance, refining my
+                    ability to operate in fast-paced environments and remain creative, balancing 
+                    perfecting my craft and working a task to completion.
                     <br /><br />
-                    This website was developed by me! View the source code <a> at this repository</a>
+                    <div id="about-footer">
+                    This website was proudly designed and developed by me, 
+                    <br />View the source code <a> at this repository</a>
+                    </div>
                 </p>
             </div>
         </div>

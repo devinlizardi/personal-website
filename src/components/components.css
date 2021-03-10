@@ -239,3 +239,10 @@
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+#about-footer {
+	position: relative;
+	top: 1em;
+	margin-left: -15em;
+	text-align: center;
+}

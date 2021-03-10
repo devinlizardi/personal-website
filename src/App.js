@@ -35,14 +35,14 @@ function App() {
 			<img id="background" src={bg}/>
 			<div id="background-mask"/>
 			<div className="sidenav-main">
-				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/about">
-					<h2 className="sidenav-title">about</h2>
-				</Link>
 				<Link onClick={()=>{setActive('educator')}} className={active==='educator'? "sidenav-active" : "sidenav-inactive"} to="/educator">
 					<h2 className="sidenav-title">educator</h2>
 				</Link>
 				<Link onClick={()=>{setActive('creative')}} className={active==='creative'? "sidenav-active" : "sidenav-inactive"} to="/creative">
 					<h2 className="sidenav-title">creative</h2>
+				</Link>
+				<Link onClick={()=>{setActive('about')}} className={active==='about'? "sidenav-active" : "sidenav-inactive"} to="/about">
+					<h2 className="sidenav-title">about</h2>
 				</Link>
 			</div>
 			{/* ROUTES */}
