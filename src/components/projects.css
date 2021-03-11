@@ -63,7 +63,7 @@
 	font-family: Open Sans;
 	font-size: 20px;
 
-	pointer-events: none;
+	pointer-events: auto;
 	cursor: default;
 	position: absolute;
 	padding: 0 4em 0 4.8em;
