@@ -37,7 +37,7 @@ function About() {
                     <br /><br />
                     <div id="about-footer">
                     This website was proudly designed and developed by me, 
-                    <br />View the source code <a> at this repository</a>
+                    <br />View the source code <a href="https://github.com/devinlizardi/devinlizardi.github.io"> at this repository</a>
                     </div>
                 </p>
             </div>
