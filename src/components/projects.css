@@ -83,7 +83,7 @@
 
 .image-container {
 	margin-top: 4em;
-	pointer-events: none;
+	pointer-events: auto;
 }
 
 #title-bar {
