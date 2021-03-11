@@ -55,7 +55,7 @@ function LizardLearning() {
             </div>
             <div className="overflow-text">
                 I have worked beyond just Minecraft, however, as I&#39;ve also been teaching
-                students introductary Machine Learning, the course to be adapted from <a href="#"> this</a> repository.
+                students introductary Machine Learning, the course to be adapted from <a href="https://github.com/devinlizardi/devinsminecraft"> this</a> repository.
                 <br /><br />
                 Currently the full Minecraft course is in the early stages of development and testing; there are 
                 many, many, resources for Minecraft modding already out there. Most I find jump right into the 
