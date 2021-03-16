@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useEffect, useState} from 'react';
 import {
 	BrowserRouter as Router,
@@ -18,8 +19,11 @@ import bg from './img/coffeecup.jpg';
 
 function App() {
 	const [active, setActive] = useState('');
+	const [spin, setSpin] = useState(0);
 
 	useEffect(() => {
+		console.log(spin)
+		setSpin(spin+400);
 		window.scroll({
 			behavior: "smooth",
 			top: 0,
@@ -31,7 +35,7 @@ function App() {
 		<Router>
 			<div className="header">
 				<Link to="/" onClick={()=>{setActive('')}}>
-					<img id="lizard-above" 
+					<img id="lizard-above" style={{'transform' : `rotate(${spin}deg)`}}
 								src={lizard} alt="my last name
 								is just lizard-with-an-i, something i've been saying
 								for years..."/>

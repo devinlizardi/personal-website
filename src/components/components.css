@@ -78,6 +78,7 @@
 	margin-left: 50px;
 	top: 10px;
 	width: 63.48px;
+	transition: all 1s ease;
 }
 
 /* CONTAINERS */
@@ -135,7 +136,7 @@
 	display: flex;
 	left: 50%;
 	top: 7em;
-	margin-left: -43vw;
+	margin-left: -40em;
 	width: fit-content;
 	padding: 1em;
 	z-index: 1;
@@ -169,18 +170,18 @@
 #about-text {
 	margin-top: 5px;
 	height: fit-content;
-	width: 60vw;
+	width: 58em;
 	padding-left: 4em;
 }
 
 #about-bg {
 	background-color:#f1f1f1;
-	width: 80em;
+	width: 84em;
 	height: 30em;
 	position: relative;
 	left: 50%;
 	z-index: 0;
-	margin-left: -40em;
+	margin-left: -42em;
 	margin-top: -18em;
 	border-radius: 15px;
 }
