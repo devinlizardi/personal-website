@@ -9,7 +9,7 @@ import 'scroll-behavior-polyfill';
 import './components/components.css';
 
 import About from './components/About';
-import Header from './components/Header';
+import lizard from './img/lizard.png';
 import Homepage from './components/Homepage';
 import LizardLearning from './components/LizardLearning';
 import Creative from './components/Creative';
@@ -29,9 +29,16 @@ function App() {
 	return(
 		<>
 		<Router>
-			<Link to="/" onClick={()=>{setActive('')}}>
-				<Header />
-			</Link>
+			<div className="header">
+				<Link to="/" onClick={()=>{setActive('')}}>
+					<img id="lizard-above" 
+								src={lizard} alt="my last name
+								is just lizard-with-an-i, something i've been saying
+								for years..."/>
+					<h1 id="header-lizard">Devin Lizardi</h1>
+					<p>educator and creative covered in cat hair</p>
+				</Link>
+			</div>
 			<img id="background" src={bg}/>
 			<div id="background-mask"/>
 			<div className="sidenav-main">

@@ -8,6 +8,7 @@ import vimeo from './../img/vimeo-square-logo.svg';
 
 function About() {
     return(
+        <>
         <div className="content-main">
             <img id="portrait" src={portrait} alt="Me and my cat! Finn is a 
                 3 year old very very soft brown cat who likes to
@@ -21,7 +22,7 @@ function About() {
                 </a>
                 <a href="https://vimeo.com/devinlizardi">
                     <img id="vimeo-icon" className="icon" src={vimeo}/>
-					</a>
+				</a>
 			</div>
             <div id="about-text">
                 <h1>Hello, I&#39;m Devin</h1>
@@ -42,6 +43,8 @@ function About() {
                 </p>
             </div>
         </div>
+        <div id="about-bg"/>
+        </>
     );
 }
 

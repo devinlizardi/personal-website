@@ -26,9 +26,6 @@
 	margin-left: -145px;
 }
 
-.header:hover {
-	cursor: pointer;
-}
 
 .header h1 {
 	width: 180px;
@@ -43,7 +40,6 @@
 
 .header p {
 	position: absolute;
-	width: 290px;
 	height: 22px;
 	left: 15em;
 	top: 4em;
@@ -82,14 +78,6 @@
 	margin-left: 50px;
 	top: 10px;
 	width: 63.48px;
-	height: 68.54px;
-	transform: rotate(250deg);
-	transition: transform 9999s 9999s;
-}
-
-#lizard-above:hover {
-	transform: rotate(1690deg);
-	transition: transform 6s ease;
 }
 
 /* CONTAINERS */
@@ -147,9 +135,10 @@
 	display: flex;
 	left: 50%;
 	top: 7em;
-	margin-left: -550px;
+	margin-left: -43vw;
 	width: fit-content;
 	padding: 1em;
+	z-index: 1;
 }
 
 .content-main h1 {
@@ -182,6 +171,18 @@
 	height: fit-content;
 	width: 60vw;
 	padding-left: 4em;
+}
+
+#about-bg {
+	background-color:#f1f1f1;
+	width: 80em;
+	height: 30em;
+	position: relative;
+	left: 50%;
+	z-index: 0;
+	margin-left: -40em;
+	margin-top: -18em;
+	border-radius: 15px;
 }
 
 /* ICONS */
@@ -257,21 +258,3 @@
 	padding-top: 6em;
 	text-align: center;
 }
-
-#spinner {
-	animation-name: spin, depth;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 9s;
-  }
-  @keyframes spin {
-	from { transform: rotateZ(0deg) rotateY(0deg); }
-	to { transform: rotateZ(-360deg) rotateY(-360deg); }
-  }
-  @keyframes depth {
-	0% { text-shadow: 0 0 black; }
-	25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
-	50% { text-shadow: 0 0 black; }
-	75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
-	100% { text-shadow: 0 0 black; }
-  }
