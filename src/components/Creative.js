@@ -9,17 +9,8 @@ import places from './../img/ohtheplaces.jpg';
 import DragContainer from './DragContainer';
 
 function Creative() {
-    return(<>
-        <br /><br />
-        <div className="intro-text">
-            <h2>An Artist</h2>
-            <p>
-                Art is my exploration of my varying interests - whether it&#39;s acting & improv, 
-                illustration, music, computer programming, etc. My fine art is mostly self-taught, the focus
-                of my work being to express with honesty, in whatever the best form I feel is suited for and 
-                reflects the work itself.
-            </p>
-        </div>
+    return(
+    <div className="creative-container">
         <div className="project-container-secondary">
             <div id="illustration-desc">
                 <h2>Illustration Progress</h2>
@@ -30,6 +21,15 @@ function Creative() {
                 </p>
             </div>
             <Pieces />
+        </div>
+        <div className="artist-desc">
+            <h2>An Artist</h2>
+            <p>
+                Art is my exploration of my varying interests - whether it&#39;s acting & improv, 
+                illustration, music, computer programming, etc. My fine art is mostly self-taught, the focus
+                of my work being to express with honesty, in whatever the best form I feel is suited for and 
+                reflects the work itself.
+            </p>
         </div>
         <div className="project-container-tertiary">
                 <div className="desc-container">
@@ -48,7 +48,8 @@ function Creative() {
                         allowFullScreen></iframe>
                 </div>
             </div>
-    </>);
+            <div style={{'height': '5em'}}/>
+    </div>);
 }
 
 function Pieces() {
