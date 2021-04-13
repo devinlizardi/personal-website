@@ -32,23 +32,23 @@ function Creative() {
             </p>
         </div>
         <div className="project-container-tertiary">
-                <div className="desc-container">
-                    <h2>Video Reel</h2>
-                    <em>2016-2020</em>
-                    <p id="reel-text">
-                        I&#39;m also a passionate video editor and actor, and have been involved in a number
-                        of student films through my <a href="https://www.facebook.com/jericho.comedy">improv team</a>,
-                         <a href="https://www.giantfilmmakersucb.org/"> GiANT Filmmakers</a>, 
-                         and <a href="http://caldka.org/">Cal DKA</a>.
-                    </p>
-                </div>
-                <div className="image-container" id="vimeo-iframe">
-                    <iframe src="https://player.vimeo.com/video/346242259" width="640" height="360" 
-                        frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" 
-                        allowFullScreen></iframe>
-                </div>
+            <div className="desc-container" id="video-desc">
+                <h2>Video Reel</h2>
+                <em>2016-2020</em>
+                <p id="reel-text">
+                    I&#39;m also a passionate video editor and actor, and have been involved in a number
+                    of student films through my <a href="https://www.facebook.com/jericho.comedy">improv team</a>,
+                        <a href="https://www.giantfilmmakersucb.org/"> GiANT Filmmakers</a>, 
+                        and <a href="http://caldka.org/">Cal DKA</a>.
+                </p>
             </div>
-            <div style={{'height': '5em'}}/>
+            <div>
+                <iframe src="https://player.vimeo.com/video/346242259" width="640" height="360" 
+                    frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" 
+                    allowFullScreen></iframe>
+            </div>
+        </div>
+        <div style={{'height': '5em'}}/>
     </div>);
 }
 

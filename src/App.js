@@ -8,9 +8,9 @@ import {
   } from "react-router-dom";
 import 'scroll-behavior-polyfill';
 import './components/components.css';
+import lizard from './img/lizard.png';
 
 import About from './components/About';
-import lizard from './img/lizard.png';
 import Homepage from './components/Homepage';
 import LizardLearning from './components/LizardLearning';
 import Creative from './components/Creative';
