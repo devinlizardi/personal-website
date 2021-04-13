@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import './components.css';
 import './projects.css';
 
@@ -7,11 +7,14 @@ import title_bar from './../img/osx-bar.png';
 
 function LizardLearning() {
     const [update, setUpdate] = useState(true);
+    const overflowCont = useRef(null);
 
-    function expand(e) {
-        let isSmall = e.target.style.maxHeight != "64em";
+    const expandHeight = "41em";
 
-        e.target.style.maxHeight = isSmall ? "64em" : "37em";
+    function expand() {
+        let isSmall = overflowCont.current.style.maxHeight != expandHeight;
+
+        overflowCont.current.style.maxHeight = isSmall ? expandHeight : "31em";
         setUpdate(!update);
     }
 
@@ -33,7 +36,7 @@ function LizardLearning() {
             I&#39;m so eager to cover.
             </p>
         </div>
-        <div className="project-container-main" onClick={expand}>
+        <div className="project-container-main" ref={overflowCont}>
             <div className="leading-desc-img">
                 <div className="desc-container">
                     <h2>Minecraft</h2>
@@ -53,7 +56,7 @@ function LizardLearning() {
                         Currently the full Minecraft course is in the early stages of development and testing; there are 
                         many, many, resources for Minecraft modding already out there. Most I find jump right into the 
                         Forge API with a &#34;learn from my code&#34; approach and can be already outdated within a number of months,
-                        or assume a student with little coding experience and understand complex abstract ideas like OOP already.
+                        or assume a student with little coding experience can understand complex abstract ideas like OOP already.
                     </p>
                 </div>
                 <div className="image-container">
@@ -62,12 +65,19 @@ function LizardLearning() {
                     <div id="gif-bg"/>
                 </div>
             </div>
+            <div id="click-expand" onClick={expand}>
+                <svg id="expand-svg" width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path transform={`scale (1, ${update ? '1' : '-1'})`} transform-origin="center" d="M3 3L15 11L27 3" 
+                        stroke="#BFBFBF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+            </div>
             <div className="overflow-text">
-                <br /><br />
-                This project is built to teach the fundamental concepts that enable students to engage in these
-                resources, addressing questions like: how do I fix my IDE? What is an API? What is a compiler? 
-                Why is it so hard to print to console in Java? The purpose being to get students to <em>eventually</em> engage with 
-                and learn from all the other resources out there on their own.
+                <p>
+                    This project is built to teach the fundamental concepts that enable students to engage in these
+                    resources, addressing questions like: how do I fix my IDE? What is an API? What is a compiler? 
+                    Why is it so hard to print to console in Java? The purpose being to get students to <em>eventually</em> engage with 
+                    and learn from all the other resources out there on their own.
+                </p>
             </div>
         </div>
         <div style={{'height': '5em'}}/>

@@ -16,13 +16,14 @@
 }
 
 .project-container-main {
+	position: relative;
 	width: 90vw;
 	background: #F4F4F4;
 	border-radius: 10px;
 	padding: 1em 0 5em 2em;
 	height: 80em;
 
-	max-height: 37em;
+	max-height: 31em;
 	transition: max-height 200ms ease;
 	overflow: hidden;
 }
@@ -65,10 +66,29 @@
 	text-decoration-color: blue;
 }
 
-.overflow-text {
-	/* TODO: put this back pls */
-	display: none;
+#click-expand {
+	position: absolute;
+	left: 0;
+	top: calc(100% - 2.5em);
+	width: 100%;
+	height: 2.5em;
+	background-color: #d1d1d128;
+}
 
+#click-expand:hover {
+	background-color: #4242423d;
+	filter: invert(1);
+	cursor: pointer;
+}
+
+#expand-svg {
+	position: absolute;
+	left: calc(50% - 1em);
+	top: calc(100% - 1.8em);
+}
+
+.overflow-text {
+	padding-top: 4em;
 	font-family: Open Sans;
 	font-size: 20px;
 
@@ -213,15 +233,17 @@
 	height: 25em;
 	width: 70vw;
 	padding-top: 2em;
-	min-width: 64em;
+	min-width: 65em;
 }
 
 #video-desc {
-	padding: 0 1em 0 1em;
+	padding: 0 2em 0 1em;
+	height: fit-content;
 }
 
 #reel-text {
 	width: 15em;
+	height: fit-content;
 }
 
 .project-container-tertiary .desc-container:hover {

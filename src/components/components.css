@@ -86,7 +86,7 @@
 	position: fixed;
 	display: flex;
 	z-index: 999999;
-	left: 75vw;
+	left: calc(100% - 20em);
 	margin-top: -7em;
 }
 
