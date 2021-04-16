@@ -167,13 +167,6 @@
 	border-radius: 20px;
 }
 
-#about-text {
-	margin-top: 5px;
-	height: fit-content;
-	width: 58em;
-	padding-left: 4em;
-}
-
 #about-bg {
 	background-color:#f1f1f1;
 	width: 84em;
@@ -231,6 +224,12 @@
 /* CONTACT PAGE */
 #contact {
 	margin-left: -470px;
+}
+
+#about-text {
+	margin-top: 5px;
+	width: 58em;
+	padding-left: 4em;
 }
 
 #about-text a {

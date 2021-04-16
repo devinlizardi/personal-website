@@ -18,6 +18,7 @@
 .project-container-main {
 	position: relative;
 	width: 90vw;
+	min-width: 70em;
 	background: #F4F4F4;
 	border-radius: 10px;
 	padding: 1em 0 5em 2em;
@@ -89,11 +90,16 @@
 
 .overflow-text {
 	padding-top: 4em;
+	padding-right: 2em;
 	font-family: Open Sans;
 	font-size: 20px;
 
 	pointer-events: auto;
 	cursor: default;
+}
+
+.overflow-text h3 {
+	line-height: 10%;
 }
 
 .overflow-text a:hover {
@@ -103,6 +109,12 @@
 .overflow-text::selection {
 	background: #22478E;
 	color: white;
+}
+
+#copy-code-img {
+	width: 30rem;
+	float: left;
+	margin: 0 2em 1em 0;
 }
 
 /* LIZARD LEARNING */
@@ -233,16 +245,16 @@
 	height: 25em;
 	width: 70vw;
 	padding-top: 2em;
+	padding-right: 2em;
 	min-width: 65em;
 }
 
 #video-desc {
-	padding: 0 2em 0 1em;
+	padding: 0 2em 0 2em;
 	height: fit-content;
 }
 
 #reel-text {
-	width: 15em;
 	height: fit-content;
 }
 

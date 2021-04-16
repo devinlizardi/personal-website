@@ -4,12 +4,13 @@ import './projects.css';
 
 import temp_image from './../img/video3.gif';
 import title_bar from './../img/osx-bar.png';
+import copy_code from './../img/copy-my-code.jpg';
 
 function LizardLearning() {
     const [update, setUpdate] = useState(true);
     const overflowCont = useRef(null);
 
-    const expandHeight = "41em";
+    const expandHeight = "81em";
 
     function expand() {
         let isSmall = overflowCont.current.style.maxHeight != expandHeight;
@@ -50,9 +51,6 @@ function LizardLearning() {
                         <b> Forge API</b> into one website anyone can access and learn from, just as I did
                         when I was learning these things for myself.
                         <br /><br />
-                        I have worked beyond just Minecraft, however, as I&#39;ve also been teaching
-                        students introductary Machine Learning, the course to be adapted from <a href="https://github.com/devinlizardi/devinsminecraft"> this</a> repository.
-                        <br /><br />
                         Currently the full Minecraft course is in the early stages of development and testing; there are 
                         many, many, resources for Minecraft modding already out there. Most I find jump right into the 
                         Forge API with a &#34;learn from my code&#34; approach and can be already outdated within a number of months,
@@ -72,11 +70,31 @@ function LizardLearning() {
                 </svg>
             </div>
             <div className="overflow-text">
+                <h3>Philosophy and Approach</h3>
                 <p>
                     This project is built to teach the fundamental concepts that enable students to engage in these
                     resources, addressing questions like: how do I fix my IDE? What is an API? What is a compiler? 
-                    Why is it so hard to print to console in Java? The purpose being to get students to <em>eventually</em> engage with 
+                    Why is it so hard to print to console in Java? The purpose being to get students to <em>eventually </em> engage with 
                     and learn from all the other resources out there on their own.
+                </p>
+                <br />
+                <h3>Interactivity in Design</h3>
+                <img src={copy_code} id="copy-code-img"/>
+                <p id="copy-code-desc">
+                    This picture illustrates the next phase of the project: <b>interactive text-editing.</b>
+                    <br /><br />
+                    There are many lessons about the attention to detail coding requires that can&#39;t be taught as easily over a YouTube video,
+                    and even more so in as verbose a language like Java. Having a training ground to practice typing coding, built into the current
+                    concepts we&#39;re working on in that moment, allows students to not only learn coding, but <em>experience </em> it.
+                    <br /> <br />
+                    Each topic that is introduced is followed by a series of increasingly complex questions; however, being multiple choice it 
+                    allows students to make guesses on concepts, then test their ideas and recieve immediate feedback pointed towards why that answer
+                    was correct or incorrect. This is modeled after my own experience as a tutor, and the structure of Google&#34;s Tensorflow bootcamp.
+                    <br /><br />
+                    The next phase of development in this area is a bit behind, but building in a simple text-editor to encourage students
+                    to copy code line-by-line affords kinesthetic learning for students new to typing code, as well as builds the attention
+                    to detail needed to learn a verbose language like Java. This concept is very much so inspired by the <a href="">p5.js</a> website,
+                     which does a fantastic job allowing students to jump right into the library and try things out for themselves.
                 </p>
             </div>
         </div>
