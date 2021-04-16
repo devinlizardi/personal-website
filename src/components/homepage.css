@@ -1,0 +1,37 @@
+/* HOMEPAGE */
+.homepage-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: -2em;
+    z-index: 5;
+    top: 20vh;
+}
+
+#artist-text {
+    padding-bottom: 2em;
+}
+
+#art-svg:hover {
+    box-shadow: -8px 4px 0px 0px rgba(88, 222, 198, 1);
+}
+
+#educator-text {
+    padding-left: 8em;
+}
+
+#flower {
+    position: absolute;
+    top: calc(5vh + 3em);
+    left: calc(50% - 30em);
+    z-index: 4;
+}
+
+#ampersand {
+    position: absolute;
+    top: calc(10vh + 3em);
+    left: calc(50% + 5em);
+    z-index: 4;
+}

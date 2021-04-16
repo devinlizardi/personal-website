@@ -247,14 +247,3 @@
 	margin-left: -15em;
 	text-align: center;
 }
-
-/* HOMEPAGE */
-.homepage-main {
-	perspective: 500px;
-	font-size: 38px;
-	font-weight: 100;
-	line-height: 80%;
-	font-family: 'ABeeZee', sans-serif;
-	padding-top: 6em;
-	text-align: center;
-}

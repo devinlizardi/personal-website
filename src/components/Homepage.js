@@ -1,11 +1,20 @@
 import React from 'react';
-import './components.css';
+import './homepage.css';
+
+import artistText from './../img/artist.svg';
+import educatorText from './../img/educator.svg';
+import ampersand from './../img/ampersand.svg';
+import flower from './../img/flower.svg';
 
 function About() {
-    return(
+    return(<>
         <div className="homepage-main">
-            <h1>B L O C K</h1>
+            <img src={artistText} id="artist-text"/>
+            <img src={educatorText} id="educator-text"/>
         </div>
+        <img src={ampersand} id="ampersand"/>
+        <img src={flower} id="flower"/>
+        </>
     );
 }
 
