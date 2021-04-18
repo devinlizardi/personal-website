@@ -106,16 +106,18 @@
 	font-weight: 300;
 }
 
-.sidenav-title:hover {
-	text-decoration: underline;
-}
-
 .sidenav-active {
 	color: black;
+	height: 2em;
 }
 
 .sidenav-inactive {
 	color: rgba(0, 0, 0, 0.37);
+	height: 2em;
+}
+
+.sidenav-inactive:hover {
+	text-decoration: underline;
 }
 
 .coffee-img {
@@ -128,6 +130,14 @@
 	margin-left: -720px;
 
 	filter: blur(4px);
+}
+
+#click-to-main {
+	position: absolute;
+    width: 19em;
+    left: 6em;
+    height: 6em;
+    z-index: 10;
 }
 
 /* ABOUT PAGE */
