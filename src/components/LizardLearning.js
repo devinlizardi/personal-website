@@ -24,17 +24,22 @@ function LizardLearning() {
         <div className="artist-desc">
             <h2>Teaching as Improv</h2>
             <p>
-            I approach teaching much like I approach improvisational theater: listen, then build.
-            I&#39;ve been so fortunate to work with as many students as I have; 7 year-olds with 
-            wonderfully complex dreams of self-driving cars to 13 year-olds crafting a binary 
-            classification perceptron, being able to listen to and encourage even the quitest students has
-            been my greatest asset.
+            The golden rule of improv theater is &quot;yes and,&quot; which means to accept the idea that your
+            scene partner is giving you, then add something new to it. This defines how I approach my teaching;
+            listen to a student first, then design a lesson on the relevant concepts. Each project we then work on
+            is a manifestation of <em>their </em>ideas, and this not only teaches the technical programming skills 
+            but also builds confidence in their abilities.
             <br /><br />
-            My goal is to bring my experience and passion for teaching this highly sought-after skillset 
-            to communities that really need it. Coding has the incredibly ability to enable students 
-            from a wide array of socioecomic backgrounds, and with my experience in introductory block-based
-            coding to front-end UI, artificial intelligence, and machine learning, there is so much ground
-            I&#39;m so eager to cover.
+            I&#39;ve been so fortunate to work with as many students as I have, from 7 year-olds with 
+            wonderfully grandiose dreams of self-driving cars to 13 year-olds crafting a binary 
+            classification perceptron. Being able to listen to and encourage even the quietest students has
+            been my greatest asset, and my experience with neuro-atypical students has refined the way I educate.
+            <br /><br />
+            I aspire to bring my experience and passion for teaching to communities that can really benefit from it. 
+            Learning to code has both the ability to give students from any socioeconomic background an industry skillset, 
+            and give individuals the power to make things; to see that their ideas have value and they can create them. 
+            Even if a student has no interest in becoming a developer they can learn the process of building something, 
+            and that&apos;s invaluable.
             </p>
         </div>
         <div className="project-container-main" ref={overflowCont}>
