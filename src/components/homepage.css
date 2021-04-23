@@ -24,14 +24,14 @@
 
 #flower {
     position: absolute;
-    top: calc(5vh + 3em);
+    top: calc(25vh + 3em);
     left: calc(50% - 30em);
     z-index: 4;
 }
 
 #ampersand {
     position: absolute;
-    top: calc(10vh + 3em);
+    top: calc(30vh + 3em);
     left: calc(50% + 5em);
     z-index: 4;
 }
