@@ -21,7 +21,11 @@ function App() {
 	const [active, setActive] = useState('');
 	const [spin, setSpin] = useState(0);
 	const [width, height] = useWindowSize();
+
 	const circleHeightOffset = 380;
+	const boxFactor = 60;
+	const boxLineWidth = 12;
+	const boxStartingHeight = 300;
 
 	useEffect(() => {
 		console.log(spin)
@@ -55,6 +59,9 @@ function App() {
 						<path transform={`translate(-250, ${height - circleHeightOffset})`} d={circlePaths.pathOuter} className="circle-paths"/>
 						<path transform={`translate(-250, ${height - circleHeightOffset})`} d={circlePaths.pathInner} className="circle-paths"/>
 						<path transform={`translate(-250, ${height - circleHeightOffset})`} d={circlePaths.pathOne} className="circle-paths"/>
+						<path d={`M${width-boxFactor} 25 v${boxStartingHeight} H${width} v${-boxLineWidth} H${width-boxFactor+boxLineWidth} V25`} />
+						<path d={`M${width-(boxFactor*2)} 25 v${boxStartingHeight-(boxFactor)} H${width} v${-boxLineWidth} H${width-(boxFactor*2)+boxLineWidth} V25`} />
+						<path d={`M${width-(boxFactor * 3)} 25 v${boxStartingHeight-(boxFactor*2)} H${width} v${-boxLineWidth} H${width-(boxFactor * 3)+boxLineWidth} V25`} />
 					</clipPath>
 				</svg>
 			</div>

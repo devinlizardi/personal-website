@@ -14,24 +14,48 @@
     padding-bottom: 2em;
 }
 
-#art-svg:hover {
-    box-shadow: -8px 4px 0px 0px rgba(88, 222, 198, 1);
-}
-
 #educator-text {
     padding-left: 8em;
 }
 
 #flower {
-    position: absolute;
+    position: fixed;
     top: calc(25vh + 3em);
     left: calc(50% - 30em);
     z-index: 4;
+    animation: spinner 15s ease-in-out infinite alternate;
 }
 
-#ampersand {
+.ampersand {
     position: absolute;
     top: calc(30vh + 3em);
     left: calc(50% + 5em);
     z-index: 4;
+}
+
+#amp-yellow {
+    animation: rightMin 20s ease-out forwards;
+}
+
+#amp-red {
+    animation: rightMax 20s ease-out forwards;
+}
+
+@keyframes spinner {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+     }
+}
+
+@keyframes rightMin {
+    from { transform: translateX(0); }
+    to { transform: translateX(50px); }
+}
+
+@keyframes rightMax {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
 }
