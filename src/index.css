@@ -17,6 +17,11 @@ h2::selection {
   color: white;
 }
 
+h3::selection {
+  background: #22478E;
+  color: white;
+}
+
 p::selection {
   background: #22478E;
   color: white;

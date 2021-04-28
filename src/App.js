@@ -28,7 +28,6 @@ function App() {
 	const boxStartingHeight = 300;
 
 	useEffect(() => {
-		console.log(spin)
 		setSpin(spin+400);
 		window.scroll({
 			behavior: "smooth",

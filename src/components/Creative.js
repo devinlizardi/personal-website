@@ -22,6 +22,7 @@ function Creative() {
             </div>
             <Pieces />
         </div>
+        <br /><br />
         <div className="artist-desc">
             <h2>An Artist</h2>
             <p>
@@ -31,6 +32,7 @@ function Creative() {
                 reflects the work itself.
             </p>
         </div>
+        <br /><br />
         <div className="project-container-tertiary">
             <div className="desc-container" id="video-desc">
                 <h2>Video Reel</h2>

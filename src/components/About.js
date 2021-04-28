@@ -29,18 +29,20 @@ function About() {
                 <p>
                     Recently graduated from UC Berkeley with a BA in Cognitive Science, I&#39;m trained
                     as an artist and work as an educator. Improv theater defines my approach to teaching coding,
-                    and I have found no greater inspiration than in the truly post-modernm art of a cohort of 12 year olds 
+                    and I have found no greater inspiration than in the truly post-modern art of a cohort of 12 year olds 
                     who really just want to play Minecraft. Good thing I can speak Minecraft as well.
                     <br /><br />
                     I am also pursuing work in theater and television production and performance, refining my
                     ability to operate in fast-paced environments and remain creative, balancing 
                     perfecting my craft and working a task to completion.
                     <br /><br />
-                    <div id="about-footer">
-                    This website was proudly designed and developed by me, 
-                    <br />View the source code <a href="https://github.com/devinlizardi/devinlizardi.github.io"> at this repository</a>
-                    </div>
-                </p>
+                    </p>
+                    <span id="about-footer">
+                        <p>This website was proudly designed and developed by me, 
+                            <br />
+                            View the source code <a href="https://github.com/devinlizardi/devinlizardi.github.io"> at this repository</a>
+                        </p>
+                    </span>
             </div>
         </div>
         <div id="about-bg"/>

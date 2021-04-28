@@ -9,12 +9,10 @@ import copy_code from './../img/copy-my-code.jpg';
 function LizardLearning() {
     const [update, setUpdate] = useState(true);
     const overflowCont = useRef(null);
-
     const expandHeight = "81em";
 
     function expand() {
         let isSmall = overflowCont.current.style.maxHeight != expandHeight;
-
         overflowCont.current.style.maxHeight = isSmall ? expandHeight : "31em";
         setUpdate(!update);
     }
@@ -42,6 +40,7 @@ function LizardLearning() {
             and that&apos;s invaluable.
             </p>
         </div>
+        <br /><br />
         <div className="project-container-main" ref={overflowCont}>
             <div className="leading-desc-img">
                 <div className="desc-container">
@@ -66,7 +65,9 @@ function LizardLearning() {
                     <img id="title-bar" src={title_bar} alt="image header"/>
                     <img id="temp-image" src={temp_image} alt="lizard learning project demo"/>
                     <div id="gif-bg"/>
+                    <a id="lizard-learning-link" href="https://lizard-learning.herokuapp.com/tutorial"><em>View Live Demo</em></a>
                 </div>
+
             </div>
             <div id="click-expand" onClick={expand}>
                 <svg id="expand-svg" width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,10 +78,9 @@ function LizardLearning() {
             <div className="overflow-text">
                 <h3>Philosophy and Approach</h3>
                 <p>
-                    This project is built to teach the fundamental concepts that enable students to engage in these
-                    resources, addressing questions like: how do I fix my IDE? What is an API? What is a compiler? 
-                    Why is it so hard to print to console in Java? The purpose being to get students to <em>eventually </em> engage with 
-                    and learn from all the other resources out there on their own.
+                    Minecraft has been a part of my life for many years; I first learned programming at a Minecraft-modding summer camp when I was in 
+                    Middle School, and when my undergraduate commecement was cancelled I got involved with <a href="https://blockeley.com/">UC Blockeley</a> and virutally
+                    &quot;walked&quot; the stage.
                 </p>
                 <br />
                 <h3>Interactivity in Design</h3>
@@ -94,11 +94,11 @@ function LizardLearning() {
                     <br /> <br />
                     Each topic that is introduced is followed by a series of increasingly complex questions; however, being multiple choice it 
                     allows students to make guesses on concepts, then test their ideas and recieve immediate feedback pointed towards why that answer
-                    was correct or incorrect. This is modeled after my own experience as a tutor, and the structure of Google&#34;s Tensorflow bootcamp.
+                    was correct or incorrect. This is modeled after my own experience as a tutor, and the structure of Google&#39;s Tensorflow bootcamp.
                     <br /><br />
                     The next phase of development in this area is a bit behind, but building in a simple text-editor to encourage students
                     to copy code line-by-line affords kinesthetic learning for students new to typing code, as well as builds the attention
-                    to detail needed to learn a verbose language like Java. This concept is very much so inspired by the <a href="">p5.js</a> website,
+                    to detail needed to learn a verbose language like Java. This concept is very much so inspired by the <a href="https://p5js.org/">p5.js</a> website,
                      which does a fantastic job allowing students to jump right into the library and try things out for themselves.
                 </p>
             </div>

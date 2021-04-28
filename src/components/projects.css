@@ -124,6 +124,22 @@
 	pointer-events: auto;
 	top: 3em;
 	padding-right: 2em;
+	--child-display: none;
+}
+
+.image-container:hover {
+	filter: brightness(90%);
+	--child-display: block;
+}
+
+#lizard-learning-link {
+	position: absolute;
+	display: var(--child-display);
+	top: 10em;
+	left: calc(50% - 5em);
+	z-index: 10;
+	color: rgb(255, 255, 255);
+	font-size: 120%;
 }
 
 #title-bar {
@@ -165,6 +181,8 @@
 .artist-desc {
 	padding: 1em 0 1em 0;
 	width: 90vw;
+	background-color: #ffffffda;
+	padding: 0 1em 0 1em;
 }
 
 .artist-desc h2 {
@@ -181,7 +199,7 @@
 .project-container-secondary {
 	background: #F4F4F4;
 	border-radius: 10px;
-	width: 90vw;
+	width: 92vw;
 	height: 63em;
 	transition: max-height 200ms ease;
 	overflow: hidden;
@@ -243,10 +261,10 @@
 	background: #F4F4F4;
 	border-radius: 10px;
 	height: 25em;
-	width: 70vw;
+	width: 90vw;
 	padding-top: 2em;
 	padding-right: 2em;
-	min-width: 65em;
+	min-width: 53em;
 }
 
 #video-desc {
