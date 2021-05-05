@@ -22,11 +22,11 @@ function LizardLearning() {
       <div className="artist-desc">
         <h2>Teaching as Improv</h2>
         <p>
-          The golden rule of improv theater is &quot;yes and,&quot; which means to accept the idea that your scene
-          partner is giving you, then add something new to it. This defines how I approach my teaching; listen to a
-          student first, then design a lesson on the relevant concepts. Each project we then work on is a manifestation
-          of <em>their </em>ideas, and this not only teaches the technical programming skills but also builds confidence
-          in their abilities.
+          When I performed and eventually taught improvisational comedy, we kept learning one thing: &quot;yes
+          and,&quot; which means to accept the idea that your scene partner is giving you, then add something new to it.
+          This defines how I approach my teaching; listen to a student first, then design a lesson on the relevant
+          concepts. Each project we then work on is a manifestation of <em>their </em>ideas, and this not only teaches
+          the technical programming skills but also builds confidence in their abilities.
           <br />
           <br />
           I&#39;ve been so fortunate to work with as many students as I have, from 7 year-olds with wonderfully
@@ -54,7 +54,7 @@ function LizardLearning() {
               <br />
               <br />
               I&#39;ve complied all of my lessons from <b> first steps</b> into typed coding,
-              <b> object-oriented programming</b> theory and practice, and an intro into the
+              <b> object-oriented programming</b> theory, and an intro into the
               <b> Forge API</b> into one website anyone can access and learn from, just as I did when I was learning
               these things for myself.
               <br />
@@ -129,7 +129,7 @@ function LizardLearning() {
             <br />
             <br />
             There are many lessons about the attention to detail coding requires that can&#39;t be taught as easily over
-            a YouTube video, and even more so in as verbose a language like Java. Having a training ground to practice
+            a YouTube video, and even more so in a language like Java. Having a training ground to practice
             typing coding, built into the current concepts we&#39;re working on in that moment, allows students to not
             only learn coding, but <em>experience </em> it.
             <br /> <br />
