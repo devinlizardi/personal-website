@@ -151,63 +151,68 @@
 }
 
 /* ABOUT PAGE */
-.content-main {
+#about-wrapper {
+	width: 90vw;
 	position: relative;
-	display: flex;
+	height: calc(50em - 20vw);
+	top: 2em;
 	left: 50%;
-	top: 7em;
-	margin-left: -40em;
-	width: fit-content;
-	padding: 1em;
-	z-index: 1;
+	margin-left: -45vw;
+	min-width: 900px;
+	max-height: 600px;
 }
 
-.content-main h1 {
-	position: absolute;
-	top: -20px;
+.content-main {
+	display: flex;
+	top: 0;
+	width: -moz-fit-content;
+	padding: 2em;
+	z-index: 5;
+	justify-content: center;
+	align-items: center;
+	min-width: 850px;
+}
+
+#about-text h1 {
 	font-size: 38px;
 	font-weight: 100;
-	line-height: 0;
 	font-family: 'ABeeZee', sans-serif;
+	margin: 0;
+	width: fit-content;
 }
 
-.content-main p {
-	position: absolute;
-	top: 1.5em;
+#about-text p {
 	font-size: 22px;
 	line-height: 1.3;
 	font-family: 'Open-Sans', sans-serif;
+	margin: 0;
 }
 
 #portrait {
-	position: static;
-	margin-top: -1.3em;
 	width: 237px;
 	height: 325px;
 	border-radius: 20px;
 }
 
 #about-bg {
-	background-color:#f1f1f1;
-	width: 84em;
-	height: 30em;
-	position: relative;
-	left: 50%;
-	z-index: 0;
-	margin-left: -42em;
-	margin-top: -18em;
+	background-color: #f1f1f1;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	z-index: -1;
 	border-radius: 15px;
+	top: 0;
+	min-width: 900px;
 }
 
 /* ICONS */
 #icons {
 	display: flex;
 	align-items: center;
-
 	z-index: 5;
 	position: absolute;
-	top: -1em;
-	margin-left: 84%;
+	top: 0;
+	left: calc(100% - 10em);
 }
 
 .icon {
@@ -243,14 +248,11 @@
 
 /* CONTACT PAGE */
 
-#contact {
-	margin-left: -470px;
-}
-
 #about-text {
-	margin-top: 5px;
-	width: 58em;
-	padding-left: 4em;
+	width: 100%;
+	height: 325px;
+	position: relative;
+	padding-left: 2em;
 }
 
 #about-text a {
@@ -264,9 +266,15 @@
 
 #about-footer {
 	position: absolute;
-    top: 80%;
-    margin-left: -15em;
-    text-align: center;
-    left: 50%;
-    width: 36em;
+	top: calc(100% - 5em);
+	text-align: center;
+	left: calc(50% - 13em);
+	font-size: 22px;
+	line-height: 1.3;
+	font-family: 'Open-Sans', sans-serif;
+	width: 26em;
+}
+
+#about-footer p {
+	margin: 0;
 }

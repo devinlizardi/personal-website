@@ -8,7 +8,7 @@ import vimeo from "./../img/vimeo-square-logo.svg";
 
 function About() {
   return (
-    <>
+    <div id="about-wrapper">
       <div className="content-main">
         <img
           id="portrait"
@@ -17,34 +17,35 @@ function About() {
                 3 year old very very soft brown cat who likes to
                 play hide-and-seek-cuddles"
         />
-        <div id="icons">
-          <a href="https://www.instagram.com/devin_lizard/">
-            <img id="insta-icon" className="icon" src={insta} />
-          </a>
-          <a href="https://www.linkedin.com/in/devin-lizardi-65b850132/">
-            <img id="linkedin-icon" className="icon" src={linkedin} />
-          </a>
-          <a href="https://vimeo.com/devinlizardi">
-            <img id="vimeo-icon" className="icon" src={vimeo} />
-          </a>
-        </div>
         <div id="about-text">
+          <div id="icons">
+            <a href="https://www.instagram.com/devin_lizard/">
+              <img id="insta-icon" className="icon" src={insta} />
+            </a>
+            <a href="https://www.linkedin.com/in/devin-lizardi-65b850132/">
+              <img id="linkedin-icon" className="icon" src={linkedin} />
+            </a>
+            <a href="https://vimeo.com/devinlizardi">
+              <img id="vimeo-icon" className="icon" src={vimeo} />
+            </a>
+          </div>
           <h1>Hello, I&#39;m Devin</h1>
           <p>
-            Recently graduated from UC Berkeley with a BA in Cognitive Science, I studied the mind and
-            am pursuing the intersections between engineering, education, and design. I aspire towards accessbility in 
-            education; a goal that requires the art of engineering and the practice of design. My work has evolved from
-            working directly with students to building educational resources, the next step of which I hope to be even
-            more exciting.
+            Recently graduated from UC Berkeley with a BA in Cognitive Science, I studied the mind and am pursuing the
+            intersections between engineering, education, and design. I aspire towards accessbility in education; a goal
+            that requires the art of engineering and the practice of design. My work has evolved from working directly
+            with students to building educational resources, the next step of which I hope to be even more exciting.
             <br />
             <br />
-            I am also practicing work in theater and television production and performance, refining my ability to operate
-            in fast-paced environments and remain creative, balancing perfecting my craft and working a task to
+            I am also practicing work in theater and television production and performance, refining my ability to
+            operate in fast-paced environments and remain creative, balancing perfecting my craft and working a task to
             completion.
             <br />
             <br />
           </p>
-          <span id="about-footer">
+        </div>
+      </div>
+      <span id="about-footer">
             <p>
               This website was proudly designed and developed by me,
               <br />
@@ -52,10 +53,8 @@ function About() {
               <a href="https://github.com/devinlizardi/devinlizardi.github.io"> at this repository</a>
             </p>
           </span>
-        </div>
-      </div>
       <div id="about-bg" />
-    </>
+    </div>
   );
 }
 
